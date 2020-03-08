@@ -25,7 +25,6 @@ module.exports = {
   mode: process.env.NODE_ENV,
   optimization,
   entry: {
-    antd: ['antd'],
     vendor: [
       'mobx',
       'mobx-react',
@@ -34,16 +33,10 @@ module.exports = {
       'react-router',
       'react-router-dom',
       'prop-types',
+      'react-highcharts',
+      'antd',
       // 'braft-editor',
       // 'react-bmap',
-    ],
-    other: [
-      // 'echarts',
-      // 'echarts-for-react',
-      'react-highcharts',
-      // 'react-json-view',
-      // 'react-infinite-scroller',
-      // 'immutability-helper',
     ],
     common: [
       'lodash',

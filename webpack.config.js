@@ -143,16 +143,7 @@ if (process.env.NODE_ENV === 'development') {
 
   plugins.push(new webpack.DllReferencePlugin({
     context: path.join(__dirname),
-    // eslint-disable-next-line import/no-unresolved
-    manifest: require('./dist/antd-manifest.json'),
-  }));
-  plugins.push(new webpack.DllReferencePlugin({
-    context: path.join(__dirname),
     manifest: require('./dist/vendor-manifest.json'),
-  }));
-  plugins.push(new webpack.DllReferencePlugin({
-    context: path.join(__dirname),
-    manifest: require('./dist/other-manifest.json'),
   }));
   plugins.push(new webpack.DllReferencePlugin({
     context: path.join(__dirname),
