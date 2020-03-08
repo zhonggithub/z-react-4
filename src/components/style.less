@@ -1,0 +1,656 @@
+/**
+* @Author: Zz
+* @Date:   2016-09-22T20:27:46+08:00
+* @Email:  quitjie@gmail.com
+* @Last modified by:   Zz
+* @Last modified time: 2016-09-22T23:41:17+08:00
+*/
+
+.footer-wrap{
+  // height: 64px;
+  background: #373737;
+  overflow: hidden;
+}
+
+.ant-layout-breadcrumb {
+  margin: 0px 0 -17px 0px;
+  //margin: 0px 0 -15px 0px;
+}
+
+.hms-layout-top {
+  min-width: 1100px;
+  //height: 100%;
+}
+
+.hms-layout-top .login-tool {
+  float: right;
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  //margin-right: 100px;
+  //margin: 16px 42px 16px 56px;
+}
+
+// .ant-layout-footer {
+//   overflow: hidden;
+//   height: 38px;
+//   line-height: 38px;
+//   text-align: center;
+//   font-size: 13px;
+//   color: #999;
+//   display: flex;
+//   justify-content: center;
+//   //width: 100%;
+//   background: #373737;
+// }
+.ant-layout-menu-item {
+  font-size: 16px;
+}
+.ant-layout-menu-item-1 {
+  //background: #f3f3f3;
+  font-size: 16px;
+  padding: 0 10px 0 0;
+}
+.ant-layout-menu-item-2 {
+  //background: #f3f3f3;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.ant-layout-menu-item-3 {
+  //background: #f3f3f3;
+  font-size: 16px;
+  padding: 0 10px 0 0;
+  width: 54px;
+}
+
+.hms-group-layout-border {
+  border: 1px solid #e7ecf1;
+  margin-top: 20px;
+}
+
+.hms-content-header {
+  margin: 0px 0 -14px 0px;
+  font-family: "Open Sans",sans-serif;
+  //font-size: 16px;
+  font-weight: bold;
+}
+
+.ant-content-layout-header {
+  //height: 10px;
+  border-bottom: 1px solid #e9e9e9;
+  margin: 20px 0px 20px 0px;
+}
+
+.hms-layout-breadcrumb {
+  margin: 0px 0 -17px 0px;
+}
+.hms-breadcrumb-content-layout-header {
+   background: #fff;
+   height: 30px;
+   border-bottom: 1px solid #e9e9e9;
+}
+
+.hms-statistics-title {
+  //margin: 8px 0 -17px 10px;
+  margin-top: 20px;
+  font-family: "Open Sans",sans-serif;
+  color: #2db7f5;
+  font-weight: bold;
+  //height: 50px;
+}
+
+.hms-statistics-title-header {
+  height: 10px;
+  border-bottom: 1px solid #e9e9e9;
+  margin: 0px 20px 20px 20px;
+}
+
+.hms-statistics-title-right {
+  float: right;
+  margin: -5px 20px 0px 0px;
+}
+
+//-------------------
+
+.ant-layout-aside {
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.ant-layout-aside .ant-layout-logo {
+  width: 150px;
+  height: 32px;
+  //background: #333;
+  border-radius: 6px;
+  margin: 10px 24px 11px 28px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.ant-layout-aside-collapse .ant-layout-logo {
+  width: 32px;
+  //margin: 16px;
+  margin: 10px 16px 11px 16px;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside .ant-layout-sider {
+  width: 224px;
+  background: #293542; //#ccc;//#404040;
+  position: absolute;
+  overflow: visible;
+  padding-bottom: 24px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside-collapse .ant-layout-sider {
+  width: 64px;
+  transition: all 0.3s ease;
+}
+
+//----------------------------
+.ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+    content: ""!important;
+}
+//---------------------------------------\\
+
+.ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-item {
+    border-right: 0px solid #e9e9e9!important;
+    margin-left: -1px;
+    left: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 实际使用中需要改成 position: fixed */
+.ant-layout-aside .ant-aside-action {
+  height: 42px;
+  width: 224px;
+  // position: fixed; //absolute;
+  bottom: 0;
+  background:  #4A5064;//#656565; // #293542;//
+  color: #fff;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside-collapse .ant-aside-action {
+  width: 64px;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside .hms-layout-nav-header {
+  background: #fff;
+  height: 54px; // 64px;
+  border-bottom: 1px solid #e9e9e9;
+  min-width: 1000px;
+}
+
+.ant-layout-aside .ant-layout-header {
+  background: #fff;
+  height: 52px; // 64px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.ant-layout-aside .ant-layout-main {
+  margin-left: 224px;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside-collapse .ant-layout-main {
+  margin-left: 64px;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside .ant-layout-footer {
+  height: 40px;
+  // line-height: 40px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  background: #fff;
+  border-top: 1px solid #e9e9e9;
+  width: 100%;
+}
+
+.ant-layout-aside-collapse .ant-layout-sider .ant-menu-submenu-title {
+    padding: 0px 16px 0 20px!important; //0px 16px 0 28px; //24px;
+    font-size: 12px;
+    line-height: 42px;
+    height: 42px;
+}
+
+.hms-collapse-menu-submenu-title {
+  font-size: 16px;
+  line-height: 42px;
+  height: 42px;
+}
+
+.hms-collapse-menu-second-submenu-title {
+  font-size: 14px;
+  line-height: 42px;
+  height: 42px;
+  margin-left: -3px;
+}
+
+.hms-span-text {
+  font-size: 14px;
+}
+
+.hms-def-picture-appear-close-icon {
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  top: 0;
+  opacity: 0.7;
+  background: #f3565d;
+  color: #fff;
+  border-radius: 12px!important;
+  font-size: 16px;
+}
+
+.hms-def-picture-appear-img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  left:0;
+  top:0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.hms-picture-card-title {
+  text-align: center;
+  width: 91px;
+  margin: 0px 8px;
+  color: #333333;
+  text-decoration: none;
+  font-family: Roboto-Regular,Arial;
+  font-size: 10.0pt;
+  line-height: 16px;
+}
+
+.hms-picture-card {
+  border: 1px solid #e7ecf1;
+  width: 91px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  float: left;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+.hms-picture-card-select {
+  border: 1px solid #e7ecf1;
+  width: 91px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  float: left;
+  margin: 0px 8px;
+  background: #57c5f7;
+}
+
+.hms-layout-img {
+  width: 53px;
+  height: 101px;
+  border: 0;
+  //border-radius: 8px!important;
+}
+
+// FUpload
+.input-file {
+    position: relative; /* 保证子元素的定位 */
+    border: 1px dashed #d9d9d9;
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    background-color: #fbfbfb;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: border-color .3s ease;
+    transition: border-color .3s ease;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.text {
+    display: inline-block;
+    margin-top: 25px;
+    color: #666;
+    font-family: "黑体";
+    font-size: 18px;
+}
+
+.file {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 80px; /* 宽高和外围元素保持一致 */
+    height: 80px;
+    opacity: 0;
+    -moz-opacity: 0;  /* 兼容老式浏览器 */
+    filter: alpha(opacity=0); /* 兼容IE */
+}
+
+.user-logo-tool {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-top: 12px;
+}
+
+.top-nav-logo {
+  float: left;
+  height: 32px;
+  border-radius: 6px;
+  margin: 8px 24px 11px 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.top-nav-login-tool {
+  float: right;
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  //margin-right: 100px;
+  //margin: 16px 42px 16px 56px;
+}
+
+.ant-layout-sider-trigger {
+  background: #293542!important;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.page-header-title {
+  margin-bottom: .5em;
+  color: rgba(0,0,0,.85);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.and-page-header {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-bottom: 16px;
+  padding-right: 24px;
+  background-color: white;
+  height: 90px;
+}
+
+.ant-layout-header-right {
+  float: right;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ant-layout-header-right-item {
+  padding: 0 12px;
+  display: inline-block;
+}
+
+.page-side-wrap {
+  width: 240px;
+  min-width: 240px;
+  background: #373737;
+}
+
+.ant-layout-border {
+  border: 1px solid #e7ecf1!important;
+  padding: 20px 0px 10px 0px;
+  margin: 20px;
+}
+
+.ant-layout-group-form {
+  margin-top: 10px;
+  border: 1px solid #e7ecf1!important;
+  padding: 20px 0px 0px;
+  margin: 20px 0px 20px 0px;
+  background: #f7f7f7;
+}
+.ant-layout-side {
+   position: relative;
+   background: #373737;
+   width: 240px;
+   height: 90vh;
+   //min-height: 100%;
+   overflow: hidden;
+}
+
+.ant-layout-header-1{
+  height: 24px;
+  border-bottom: 1px solid #e9e9e9;
+  margin: 0px 20px 20px 20px;
+}
+
+.def-btn-class (@color) {
+  background:  @color;
+  color: #fff;
+  border-color:  @color;
+  border-radius: 4px;
+}
+
+.ant-create-btn {
+  .def-btn-class(#b816d4)
+}
+.ant-create-btn:hover {
+  .def-btn-class(#841996)
+}
+
+.ant-refresh-btn {
+  .def-btn-class(#337ab7)
+}
+.ant-refresh-btn:hover {
+  .def-btn-class(#125188)
+}
+
+.ant-batch-btn {
+  .def-btn-class(#fd9927)
+}
+
+.ant-delete-btn {
+  .def-btn-class(#e7505a)
+}
+.ant-delete-btn:hover {
+  .def-btn-class(#b73948)
+}
+
+.ant-edit-btn {
+  .def-btn-class(#fd9927)
+}
+.ant-edit-btn:hover {
+  .def-btn-class(#da7c0c)
+}
+
+.ant-retrieve-btn {
+  .def-btn-class(#3598dc)
+}
+.ant-retrieve-btn:hover {
+  .def-btn-class(#0290f5)
+}
+
+.ant-sync-btn {
+  .def-btn-class(#55B732)
+}
+.ant-sync-btn:hover {
+  .def-btn-class(#48a028)
+}
+
+.ant-status-btn {
+  .def-btn-class(#108ee9)
+}
+.ant-status-btn:hover {
+  .def-btn-class(#0f87dd)
+}
+.ant-status-btn-false {
+  .def-btn-class(#7090c8)
+}
+.ant-status-btn-false:hover {
+  .def-btn-class(#617eb1)
+}
+
+.ant-def-btn {
+  margin-left: 5px;
+  padding: 5px 7px 5px 5px;
+  .def-btn-class(#108ee9)
+}
+.ant-def-btn:hover {
+  margin-left: 5px;
+  padding: 5px 7px 5px 5px;
+  .def-btn-class(#40a5ed)
+}
+.ant-def-btn-lagre {
+  margin-left: 5px;
+  padding: 8px 15px 8px 8px;
+  .def-btn-class(#108ee9)
+}
+.ant-def-btn-lagre:hover {
+  margin-left: 5px;
+  padding: 8px 15px 8px 8px;
+  .def-btn-class(#40a5ed)
+}
+
+.ant-export-excel-btn {
+  margin-left: 5px;
+  padding: 5px 10px 5px 5px;
+  .def-btn-class(rgb(51, 189, 239))
+}
+.ant-export-excel-btn:hover {
+  .def-btn-class(rgb(1, 154, 210))
+}
+
+.icon-margin-btn {
+  margin-right: 5px;
+}
+
+.table-column-hidden {
+  display: none;
+}
+
+/* 表格列内容靠右 */
+.table-column-content-right {
+   text-align: right;
+   font-size: 14px;
+}
+/* 表格列头和列内容都靠右 */
+.ant-table-thead > tr > th.table-column-right,
+.ant-table-tbody > tr > td.table-column-right {
+  text-align: right;
+  font-size: 14px;
+}
+
+/* 表格列内容靠左 */
+.table-column-content-left {
+   text-align: left;
+   font-size: 14px;
+}
+/* 表格列头和列内容都靠左 */
+.ant-table-thead > tr > th.table-column-left,
+.ant-table-tbody > tr > td.table-column-left {
+  text-align: left;
+  font-size: 14px;
+}
+
+.table-column-center-important {
+  text-align: center !important;
+  font-size: 14px;
+}
+/* 表格列内容居中 */
+.table-column-content-center {
+   text-align: center;
+   font-size: 14px;
+}
+/* 表格列头和列内容都居中 */
+.ant-table-thead > tr > th.table-column-center,
+.ant-table-tbody > tr > td.table-column-center {
+  text-align: center;
+  font-size: 14px;
+}
+
+.table-column-center-1 {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.hms-table-column-right-dark {
+  text-align: right;
+  font-size: 14px;
+  background:#f7f7f7;
+}
+
+.hms-table-column-right-eye-catch {
+  text-align: right;
+  font-size: 14px;
+  background: #57c5f7;
+}
+
+.hms-content-style {
+  margin-top: 20px;
+}
+
+.hms-layout-container {
+  //width: 100%;
+  margin: 20px;
+  //minWidth: 965px;
+}
+
+.hms-alter-title {
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  direction: ltr;
+}
+
+.hms-table-action-span {
+  margin: 20px 0px;
+  //padding: 20px 0;
+}
+
+.hms-table-column-col-select-span {
+  float: right;
+  margin: -38px 0px 0px 0px;
+}
+
+.hms-table-column-col-select-span-1 {
+  float: right;
+  margin: -20px 0px 0px 0px;
+}
+
+.hms-layout-border {
+  border: 1px solid #e7ecf1;
+  padding: 20px 0px 10px 0px;
+  //margin: 20px;
+}
+
+.hms-form-item-label {
+  font-size: 14px;
+  font-weight: 400;
+  //color: #404040;
+}

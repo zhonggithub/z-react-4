@@ -1,0 +1,55 @@
+import React, { Component } from 'react';
+import classNames from 'classnames';
+import './index.less';
+
+export default class FooterToolbar extends Component {
+  state = {
+    width: undefined,
+  };
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resizeFooterToolbar);
+    this.resizeFooterToolbar();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resizeFooterToolbar);
+  }
+
+  resizeFooterToolbar = () => {
+    const sider = document.querySelector('.ant-layout-sider');
+
+    if (sider == null) {
+      return;
+    }
+
+    const { isMobile } = this.props;
+    const width = isMobile ? null : `calc(100% - ${sider.style.width})`;
+    const { width: stateWidth } = this.state;
+
+    if (stateWidth !== width) {
+      this.setState({
+        width,
+      });
+    }
+  };
+
+  render() {
+    const {
+      children, className, extra, ...restProps
+    } = this.props;
+    const { width } = this.state;
+    return (
+      <div
+        className={classNames(className, 'footerToolbar')}
+        style={{
+          width,
+        }}
+        {...restProps}
+      >
+        <div style={{ float: 'left' }}>{extra}</div>
+        <div style={{ float: 'right' }}>{children}</div>
+      </div>
+    );
+  }
+}

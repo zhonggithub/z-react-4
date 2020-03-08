@@ -1,0 +1,36 @@
+@import '~antd/es/style/themes/default.less';
+
+.tagSelect {
+  position: relative;
+  max-height: 32px;
+  margin-left: -8px;
+  overflow: hidden;
+  line-height: 32px;
+  transition: all 0.3s;
+  user-select: none;
+  :global {
+    .ant-tag {
+      margin-right: 24px;
+      padding: 0 8px;
+      font-size: @font-size-base;
+    }
+  }
+}
+
+.tagSelectExpanded {
+  max-height: 200px;
+  transition: all 0.3s;
+}
+
+.tagSelectExpandedHasExpandTag {
+  padding-right: 50px;
+}
+
+.tagSelectTrigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  i {
+    font-size: 14px;
+  }
+}
